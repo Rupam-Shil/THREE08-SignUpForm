@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.signup {
+	position: fixed;
+	z-index: 2;
+	width: 30vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.mainarea {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	/* clip-path: circle(80.1% at 15% 53%); */
+	padding: 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.mainarea h1 {
+	width: max-content;
+	background: linear-gradient(90deg, #322264, #fb4c53);
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	color: transparent;
+	font-size: 2.5rem;
+}
+.mainarea .signup__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.mainarea .signup__wrapper .line {
+	width: 10%;
+	height: 2px;
+	background: #fb4c53;
+}
+.mainarea .signup__wrapper p {
+	color: #fb4c53;
+	font-weight: 500;
+}
+.mainarea .social_logins {
+	display: flex;
+	gap: 1rem;
+}
+.mainarea .social_logins button {
+	display: inline-block;
+	outline: none;
+	border: none;
+	background: #fff;
+	padding: 0.5rem 0.8rem;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.mainarea .social_logins button i {
+	margin-right: 5px;
+}
+.mainarea .social_logins button:hover {
+	background: #fb4c53;
+	color: #fff;
+	transform: translateY(-5px);
+	box-shadow: 0 10px 10px rgba(251, 76, 83, 0.3);
+}
+.mainarea form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 70%;
+	gap: 1rem;
+}
+.mainarea form .inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.mainarea form label {
+	font-size: 0.8rem;
+}
+.mainarea form input {
+	outline: none;
+	height: 40px;
+	background: rgba(245, 245, 245, 0.74);
+	border: 1px solid rgba(54, 54, 54, 0.3);
+	border-radius: 5px;
+}
+.mainarea .password {
+	grid-column: 1/-1;
+}
+.mainarea .agree {
+	grid-column: 1/-1;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 0.8rem;
+	line-height: 1;
+}
+.mainarea form button {
+	outline: none;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+	background: #fb4c53;
+	color: #fff;
+	box-shadow: 0 0 40px rgba(251, 76, 83, 0.5);
+	transition: 0.3s;
+}
+.mainarea form button:hover {
+	border: 1px solid #fb4c53;
+	background: #fff;
+	color: #fb4c53;
+}
+.tologin {
+	font-size: 0.8rem;
+}
+.tologin a {
+	text-decoration: none;
+	color: #fb4c53;
+}
+.webgl {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	outline: none;
+}
